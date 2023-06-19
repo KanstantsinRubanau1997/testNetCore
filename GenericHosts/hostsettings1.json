@@ -1,0 +1,26 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "ExampleHostedServiceOptions": {
+    "Name": "Innokentiy",
+    "Age": 22
+  },
+  "SomeParameter": {
+    "Value": "from hostsettings 1"
+  },
+  "OverridableValue": "Hostsettings 1",
+  "Value": "Hostsettings 1",
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Warning"
+    }
+  }
+}

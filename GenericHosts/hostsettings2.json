@@ -1,0 +1,22 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "SomeParameter": {
+    "Value": "from hostsettings 2"
+  },
+  "OverridableValue": "Hostsettings 2",
+  "Value": "Hostsettings 2",
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Error"
+    }
+  }
+}

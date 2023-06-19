@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "GenericHosts": {
+      "commandName": "Project",
+      "commandLineArgs": "SomeValue=\"console argument\" OverridableValue=\"Command line\"",
+      "environmentVariables": {
+        "PREFIX_Value": "Value with PREFIX_",
+        "PR_Value": "Value with PR_",
+        "OverridableValue": "Environment variable"
+      }
+    }
+  }
+}
