@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NetStandartLib\NetStandartLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="hostsettings1.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

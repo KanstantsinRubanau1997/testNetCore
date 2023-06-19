@@ -3,6 +3,9 @@ using GenericHosts;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NetStandartLib;
+
+Console.WriteLine("[.Net Standart text] " + Constants.SomeText);
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureHostConfiguration(configHost =>
