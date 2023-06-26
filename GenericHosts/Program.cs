@@ -7,7 +7,7 @@ using NetStandartLib;
 
 Console.WriteLine("[.Net Standart text] " + Constants.SomeText);
 
-using IHost host = Host.CreateDefaultBuilder(args)
+using IHost host = Host.CreateDefaultBuilder()
     .ConfigureHostConfiguration(configHost =>
     {
         configHost.SetBasePath(Directory.GetCurrentDirectory());
@@ -33,7 +33,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
 var host1Task = host.RunAsync();
 
 using IHost host2 = Host.CreateDefaultBuilder(args)
-    .ConfigureHostConfiguration(configHost =>
+    .ConfigureAppConfiguration(configHost =>
     {
         configHost.SetBasePath(Directory.GetCurrentDirectory());
         configHost.AddJsonFile("hostsettings2.json");
@@ -85,7 +85,6 @@ using IHost host3 = Host.CreateDefaultBuilder(args)
             .ValidateDataAnnotations();
     })
     .Build();
-
 var host3Task = host3.RunAsync();
 
 using IHost scoupedServicesHost = Host.CreateDefaultBuilder(args)
@@ -97,7 +96,6 @@ using IHost scoupedServicesHost = Host.CreateDefaultBuilder(args)
         services.AddHostedService<ScopedExampleHostedService>();
     })
     .Build();
-
 var scoupedServicesHostTask = scoupedServicesHost.RunAsync();
 
 await Task.WhenAll(host1Task, host2Task, host3Task, scoupedServicesHostTask);
