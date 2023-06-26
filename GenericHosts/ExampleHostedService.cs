@@ -34,7 +34,7 @@ namespace GenericHosts
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            _logger.LogCritical("----------------------------------------------------");
+            _logger.LogCritical($"---------------Host {_configuration.GetValue<string>("Counter")}-----------------");
             _logger.LogInformation("1. StartAsync has been called.");
 
             _logger.LogWarning("[SomeParameter:Value] " + _configuration.GetValue<string>("SomeParameter:Value"));
