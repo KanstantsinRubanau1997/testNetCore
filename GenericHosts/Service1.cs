@@ -10,7 +10,10 @@ namespace GenericHosts
 
         public Guid Id { get; set; } = Guid.NewGuid();
 
-        public Service1(ILogger<Service1> logger, IScopedService scopedService, ISingletonService singletonService)
+        public Service1(
+            ILogger<Service1> logger,
+            IScopedService scopedService,
+            ISingletonService singletonService)
         {
             _logger = logger;
             _scopedService = scopedService;

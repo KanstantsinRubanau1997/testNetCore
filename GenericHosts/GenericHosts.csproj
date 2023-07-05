@@ -12,13 +12,19 @@
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="7.0.0" />
+    <PackageReference Include="System.Security.Permissions" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NetCoreLib\NetCoreLib.csproj" />
+    <ProjectReference Include="..\NetFrameworkLib\NetFrameworkLib.csproj" />
     <ProjectReference Include="..\NetStandartLib\NetStandartLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="hostservice_clear.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="hostsettings1.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

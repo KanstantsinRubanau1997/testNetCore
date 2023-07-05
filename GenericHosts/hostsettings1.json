@@ -11,6 +11,9 @@
     "Name": "Innokentiy",
     "Age": 22
   },
+  "SingletonServiceOptions": {
+    "Id": "5edb91c4-d254-43fd-bbb1-6b73fa9f0081"
+  },
   "SomeParameter": {
     "Value": "from hostsettings 1"
   },

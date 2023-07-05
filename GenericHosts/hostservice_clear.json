@@ -1,0 +1,20 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "Logging": {
+    "Console": {
+      "LogLevel": {
+        "GenericHosts.ClearExampleHostedService": "Warning",
+        "CustomCategory": "Trace",
+        "Microsoft.Hosting.Lifetime": "Error"
+      }
+    }
+  },
+  "SomeValue": "Some value from hostservice_clear.json"
+}

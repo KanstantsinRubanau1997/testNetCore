@@ -4,3 +4,5 @@ NetFrameworkApp/obj
 NetStandartLib/bin
 NetStandartLib/obj
 .vs
+bin
+obj
