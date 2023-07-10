@@ -10,6 +10,9 @@
   "SomeParameter": {
     "Value": "from hostsettings 2"
   },
+  "SingletonServiceOptions": {
+    "Id": "666691c4-d254-43fd-bbb1-6b73fa9f0081"
+  },
   "OverridableValue": "Hostsettings 2",
   "Value": "Hostsettings 2",
   "Logging": {
