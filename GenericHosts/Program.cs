@@ -14,7 +14,7 @@ Console.WriteLine("[.Net Standart text] " + Constants.SomeText);
 Console.WriteLine("[.Net Framework text] " + FrameworkLIbConstants.GetSmth());
 Console.WriteLine("[.Net Core with Framework link text] " + CoreLibConstants.GetSmth());
 
-var isBackgroundService = false;
+var isBackgroundService = true;
 
 if (!isBackgroundService)
 {
@@ -109,7 +109,6 @@ if (!isBackgroundService)
                 .BindConfiguration(nameof(ExampleHostedService.ExampleHostedServiceOptions))
                 .ValidateDataAnnotations();
 
-            //services.Configure<ScopedServiceOptions>(nameof(ScopedServiceOptions), o => o.Id = Guid.NewGuid());
             services.AddOptions<ScopedServiceOptions>().BindConfiguration(nameof(ScopedServiceOptions));
             services.AddOptions<SingletonServiceOptions>().BindConfiguration(nameof(SingletonServiceOptions));
 
